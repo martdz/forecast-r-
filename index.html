@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Weather Forecast</title>
+		<meta name="keywords" content="Weather forecast, daily forecast, hourly forecast, current forecast">
+		<meta name="description" content="Weather forecast App">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+		<link href="weatherMaterial.css" rel="stylesheet" media="all">
+		 <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1 class="location"></h1>
+			<div id="search">
+				<input type="search" id="geolocation" placeholder="Enter your city">
+				<button type="button" class="search-btn">Search!</button>
+			</div>
+			<ul>
+
+			</ul>
+		</div>
+		<script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+		<script src="weatherMaterial.js"></script>
+		<script src="jquery.geocomplete.js"></script>
+		<!--<script src="search.js"></script>-->
+	</body>
+</html>

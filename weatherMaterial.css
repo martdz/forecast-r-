@@ -1,0 +1,259 @@
+/*reset styles*/
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	list-style:none;
+	text-decoration:none;
+}
+/*General*/
+@font-face{
+	font-family:quicksand;
+	src:url(fonts/quicksand/Quicksand-Regular.otf);
+}
+@font-face{
+	font-family:ostrich-sans;
+	src:url(fonts/ostrich-sans/Ostrich-Regular.otf);
+}
+body{
+	font-family:quicksand;
+	font-weight:bold;
+	font-size:100%;
+	color:white;
+	background-color:#CDDC39;
+}
+img{
+	max-width:100%;
+}
+@media (max-width:10000px){
+	/*wrapper*/
+	#wrapper{
+		width:80%;
+		margin:auto;
+		text-align:center;
+	}
+	#wrapper:before{
+		background: url("image/preloader.gif") no-repeat center center transparent;
+		content: "";
+		width: 60px;
+		height: 64px;
+		position: absolute;
+		top: 40%;
+		left: 45%;
+		border-radius:100%;
+		display:block;
+	}
+	#wrapper.error:before{
+		display:none;
+	}
+
+	#wrapper.error{
+		text-align:center;
+		font-size: 20px;
+	}
+
+	#wrapper.loaded:before{
+		display:none;
+	}
+	
+	/*Search*/
+	h1{
+		font-size:2.5em;
+		margin:0.5em 0 0.3em 0;
+		padding:0;
+		position:relative;
+	}
+	#search{
+		width:14em;
+		height:1.5em;
+		margin:auto;
+		text-align:;
+		border:1px solid white;
+		border-radius:0.5em;
+		display:none;
+	}
+	#wrapper.loaded #search{
+		display:block;
+	}
+	input[type=search]{
+		width:10em;
+		height:1.5em;
+		padding:0;
+		margin:0;
+		font-size:80%;
+		color:white;
+		background-color:transparent;
+	}
+	button{
+		height:1.5em;
+		vertical-align:middle;
+		padding:0;
+		margin:0 0 0 0.5em;
+		color:black;
+		background-color:transparent;
+		border-bottom:1px solid white;
+	}
+	button:hover{
+		color:white;
+		
+	}
+	button:active{
+		color:#E64A19;
+		border-bottom:1px solid #E64A19;
+	}
+	
+	/*List*/
+	ul{
+		margin-top:2em;
+	}
+	li{
+		margin-bottom:1.5em;
+		background-color:#E64A19;
+	}
+	li:first-child{
+		margin:2em 0;
+		clear:both;
+	}
+	/*Main Div*/
+	.main{
+		width:100%;
+		height:auto;
+		cursor:pointer;
+	}
+	.current{
+		color:#E64A19;
+		background-color:#FFCCBC;
+	}
+	.main div:first-child{
+		width:100%;
+		font-family:ostrich-sans;
+		font-size:140%;
+		padding:1.5em 0;
+		clear:both;
+		color:#212121;
+		background-color:white;
+	}
+	.main div:nth-child(2),
+	.main div:nth-child(3),
+	.main div:nth-child(4){
+		float:left;
+		width:33.33%;
+		position:relative;
+	}
+	.main div:nth-child(2),
+	.main div:nth-child(4){
+		font-size:600%;
+		padding-top:1.5em;
+	}
+	/*Arrow*/
+	.arrowMain,
+	.arrow{
+		width:100%;
+		clear:both;
+		text-align:center;
+		cursor:pointer;
+	}
+	/*Slide Div*/
+	.slide{
+		font-family:ostrich-sans;
+		font-weight:lighter;
+		width:100%;
+		clear:both;
+		display:none;
+	}
+	.slide div:nth-child(1),
+	.slide div:nth-child(2),
+	.slide div:nth-child(3),
+	.slide div:nth-child(4){
+		float:left;
+		width:25%;
+		position:relative;
+		margin:1.5em 0;
+	}
+	.slide div:nth-child(5){
+		clear:both;
+	}
+	.slide div span{
+		font-size:125%;
+		color:#212121;
+	}
+	
+}
+@media (max-width:1500px){
+	.main div:nth-child(2),
+	.main div:nth-child(4){
+		font-size:400%;
+	}
+}
+@media (max-width:1150px){
+	.main div:nth-child(2),
+	.main div:nth-child(4){
+		font-size:350%;
+	}
+}
+@media (max-width:1050px){
+	.main div:nth-child(2),
+	.main div:nth-child(4){
+		font-size:300%;
+	}
+}
+@media (max-width:950px){
+	.main div:nth-child(2),
+	.main div:nth-child(4){
+		font-size:270%;
+	}
+}
+@media (max-width:850px){
+	.main div:nth-child(2),
+	.main div:nth-child(4){
+		font-size:240%;
+	}
+}
+@media (max-width:750px){
+	.main div:nth-child(2),
+	.main div:nth-child(4){
+		font-size:210%;
+	}
+}
+@media (max-width:650px){
+	h1{
+		font-size:2em;
+	}
+	.main div:first-child{
+		font-size:130%;
+	}
+	.main div:nth-child(2),
+	.main div:nth-child(4){
+		font-size:180%;
+	}
+}
+@media (max-width:550px){
+	.main div:nth-child(2),
+	.main div:nth-child(4){
+		font-size:150%;
+	}
+}
+@media (max-width:450px){
+	h1{
+		font-size:1.5em;
+	}
+	.main div:first-child{
+		font-size:120%;
+	}
+	.main div:nth-child(2),
+	.main div:nth-child(4){
+		font-size:120%;
+	}
+}
+@media (max-width:350px){
+	.main div:first-child{
+		font-size:110%;
+	}
+	.main div:nth-child(2),
+	.main div:nth-child(4){
+		font-size:100%;
+	}
+	.slide{
+		font-size:85%;
+	}
+}
