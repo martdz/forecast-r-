@@ -29,7 +29,6 @@ img{
 	/*wrapper*/
 	#wrapper{
 		width:80%;
-		min-width:280px;
 		margin:auto;
 		text-align:center;
 	}
@@ -126,6 +125,7 @@ img{
 	/*Main Div*/
 	.main{
 		width:100%;
+		min-width:17.5em;
 		height:auto;
 		cursor:pointer;
 	}
@@ -167,6 +167,7 @@ img{
 		font-family:ostrich-sans;
 		font-weight:lighter;
 		width:100%;
+		min-width:17.5em;
 		clear:both;
 		display:none;
 	}
