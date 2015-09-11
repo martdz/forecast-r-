@@ -29,6 +29,7 @@ img{
 	/*wrapper*/
 	#wrapper{
 		width:80%;
+		min-width:280px;
 		margin:auto;
 		text-align:center;
 	}
