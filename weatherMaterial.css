@@ -101,6 +101,10 @@ img{
 		color:#E64A19;
 		border-bottom:1px solid #E64A19;
 	}
+	input:focus, 
+	button:focus{
+		border:none;
+	}
 	
 	/*List*/
 	ul{
