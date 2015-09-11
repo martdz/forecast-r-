@@ -84,6 +84,9 @@ img{
 		color:white;
 		background-color:transparent;
 	}
+	input[type=search]:active{
+		outline:none;
+	}
 	button{
 		height:1.5em;
 		vertical-align:middle;
@@ -100,10 +103,11 @@ img{
 	button:active{
 		color:#E64A19;
 		border-bottom:1px solid #E64A19;
+		outline:none;
 	}
 	input:focus, 
 	button:focus{
-		border:none;
+		outline:none;
 	}
 	
 	/*List*/
