@@ -64,7 +64,7 @@ $(function(){
 			else{
 
 				var weatherAPI = 'http://api.openweathermap.org/data/2.5/forecast/daily?lat='+position.coords.latitude+
-									'&lon='+position.coords.longitude+'&cnt=10&callback=?'
+									'&lon='+position.coords.longitude+'&APPID=6088acf45a080582617afd36b135e0e1&cnt=10&callback=?'
 
 				$.getJSON(weatherAPI, function(response){
 
